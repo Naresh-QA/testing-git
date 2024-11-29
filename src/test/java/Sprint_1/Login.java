@@ -16,10 +16,9 @@ public class Login {
 	driver.manage().window().maximize();
 	WebDriverWait mywait=new WebDriverWait(driver,Duration.ofSeconds(10));
 	mywait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Login']"))).click();
-		driver.get(null);
+	driver.get(null);
 
 	driver.close();	
-
 
 	}
 
