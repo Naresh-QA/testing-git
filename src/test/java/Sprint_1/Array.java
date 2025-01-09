@@ -4,7 +4,7 @@ import org.eclipse.collections.impl.block.function.IfFunction;
 
 public class Array {
 
-	public static void main(String[] args) {
+	public static void main(String[] args, int count) {
 		
 
 				int a[][]= {{100,120},{86,5},{78,86}};
@@ -13,12 +13,10 @@ public class Array {
 				for(int row=0;row<a.length;row++) {
 					for(int column=0;column<a[row].length;column++) {
 						if(a[row][column]==search) {
-							System.out.println("element is found "+ search);
-							found=true;
-							break;
+							count++;
 						}
 					}
-				}
+				}System.out.println(count);
 				if(!found) {
 					System.out.println("element not found");
 				}
