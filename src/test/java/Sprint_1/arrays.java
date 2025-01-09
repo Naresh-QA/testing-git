@@ -13,4 +13,9 @@ public class arrays {
 					System.out.println("it is found"+ row);
 		
 	}
+
+	public static String tostring(int[][] a) {
+		// TODO Auto-generated method stub
+	return null;
+	}
 }
