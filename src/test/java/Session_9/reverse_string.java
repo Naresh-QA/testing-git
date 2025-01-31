@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class reverse_string {
 
 	public static void main(String[] args) {
-		/*Scanner sc=new Scanner(System.in);
+		/*//method 1
+		 Scanner sc=new Scanner(System.in);
 		System.out.println("enter the sentence to be reversed");
 		String a=sc.next();
 		
@@ -15,6 +16,7 @@ public class reverse_string {
 			b+=a.charAt(i);
 		}
 		System.out.println(b);
+		//Method 2
 		Scanner tc=new Scanner(System.in);
 		System.out.println("enter a value");
 		String aString=tc.next();
@@ -23,6 +25,7 @@ public class reverse_string {
 		for(int row=y.length-1;row>=0;row--) {
 			bString+=y[row];
 		}System.out.println(bString);*/
+		//method 3
 		StringBuffer aString= new StringBuffer("QWERTY");
 		System.out.println(aString.reverse());
 	}
