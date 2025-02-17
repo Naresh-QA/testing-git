@@ -1,5 +1,9 @@
 package Session_8;
 
+import java.util.Arrays;
+
+import Sprint_1.arrays;
+
 public class concatinatuion {
 
 	public static void main(String[] args) {
@@ -19,6 +23,14 @@ public class concatinatuion {
 		System.out.println(s.replace('w', 'n'));
 		System.out.println(s.replace("werfwerf", "naresh"));
 		System.out.println(s.substring(0,6));
+		String n="naresh@gmail.com";//split with regards to delimeter.
+		String m[]=n.split("il");
+		System.out.println(m[0]);
+		System.out.println(m[1]);
+		System.out.println(Arrays.toString(m));
+		
+		
+
 
 }
-}
+} 
