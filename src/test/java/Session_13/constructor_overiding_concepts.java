@@ -3,9 +3,9 @@ package Session_13;
 public class constructor_overiding_concepts {
 	int z;
 	double y;
-	constructor_overiding_concepts(int a, int b) {
-	System.out.println(a+b);
-	}
+	//constructor_overiding_concepts(int a, int b) {
+	//System.out.println(a+b);
+	//}
 	public constructor_overiding_concepts(int a , double b) {
 		int z=a;
 		double y=b;
