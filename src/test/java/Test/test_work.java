@@ -1,6 +1,7 @@
 package Test;
 
 import java.io.InputStream;
+import java.util.Scanner;
 
 class bankaccount{
 	private int accountnumber;
@@ -10,9 +11,7 @@ class bankaccount{
 	private int deposit;
 	private int withdraw;
 	private int newbalance;
-	public bankaccount(InputStream in) {
-		// TODO Auto-generated constructor stub
-	}
+	
 	public int getAccountnumber() {
 		return accountnumber;
 	}
@@ -38,16 +37,18 @@ class bankaccount{
 		return newbalance;
 	}
 	public void setNewbalance(int newbalance) {
-		this.newbalance = newbalance;
+		newbalance =deposit+balance;
 	}
 	public int getDeposit() {
-		return deposit+newbalance;
+		deposit=deposit+balance;
+		System.out.println("New balance is : "+(deposit+balance));
+		return deposit+balance;
 	}
 	public void setDeposit(int deposit) {
 		this.deposit = deposit;
 	}
 	public int getWithdraw() {
-		System.out.println("withdraw amount: "+ withdraw+ "newbalance : "+(newbalance-withdraw));
+		System.out.println("withdraw amount: "+ withdraw+ ", newbalance : "+(newbalance-withdraw));
 		return newbalance-withdraw;
 	}
 	public void setWithdraw(int withdraw) {
@@ -56,33 +57,28 @@ class bankaccount{
 	public int nextInt() {
 		// TODO Auto-generated method stub
 		return 0;
-	}
-	
-	
-	
+	}	
 	
 }
 
 public class test_work {
 public static void main(String[] args) {
-	
-	bankaccount where=new bankaccount(System.in); 
+	Scanner scanner = new Scanner(System.in);
+	bankaccount where=new bankaccount(); 
 	System.out.println("enter a number : ");
-	int setbalance=where.nextInt();
+	 //scanner.nextLine();
+	 
+	where.setBalance(scanner.nextInt());
 	where.getBalance();
-
-		/*where.setBalance(1000);
-		where.setAccountnumber(123456789);
-		where.setName("naresh");
-		where.setDeposit(1000);
-		where.setWithdraw(200);
-		where.getAccountnumber();
-		where.getBalance();
-		where.getName();
-		where.getDeposit();
-		where.getNewbalance();
-		where.getWithdraw();*/
-		
+	System.out.println("enter amount to deposit : ");
+	where.setDeposit(scanner.nextInt());
+	where.getNewbalance();
+	System.out.println("enter amount to withdraw : ");
+	where.setWithdraw(scanner.nextInt());
+	where.getWithdraw();
+System.out.println("enter name : ");
+	where.setName(scanner.next());
+	where.getName();
 	
 
 }
