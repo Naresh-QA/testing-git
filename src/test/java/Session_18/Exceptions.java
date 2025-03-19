@@ -6,10 +6,12 @@ import net.bytebuddy.asm.Advice.Enter;
 
 public class Exceptions {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
+		double z=1000;
+		int doo=(int)z;
 		int a[]=new int[5];
 		Scanner scanner=new Scanner(System.in);
-		
+		Thread.sleep(5000);	
 		try {
 			System.out.println("enter A position value from 0-4");
 			int pos=scanner.nextInt();
