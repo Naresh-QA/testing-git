@@ -8,7 +8,7 @@ public class Array {
 		
 
 				int a[][]= {{100,120},{86,5},{78,86}};
-				int search =8;
+				int search =100;
 				boolean found=false;
 				for(int row=0;row<a.length;row++) {
 					for(int column=0;column<a[row].length;column++) {
