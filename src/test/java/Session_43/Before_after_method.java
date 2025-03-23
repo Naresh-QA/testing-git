@@ -1,6 +1,8 @@
 package Session_43;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -11,11 +13,11 @@ public class Before_after_method {
 		void search(){
 			System.out.println("Search successfull");
 	}
-		@BeforeMethod
+		@BeforeClass
 		void login() {
 			System.out.println("login successful");
 		}
-		@AfterMethod
+		@AfterClass
 		void logout() {
 			System.out.println("logout successful");
 		}
