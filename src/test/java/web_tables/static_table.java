@@ -45,13 +45,18 @@ public class static_table {
 				}
 					}
 				
-		//add data 
-				for(int r=3;r<=row;r++) {
+		//add data
+				int i=0;
+				for(int r=2;r<=row;r++) {
 					//for(int c=1;c<=columns;c++)
 					{
 						String valueString=driver.findElement(By.xpath("//table[@name='BookTable']//tr["+r+"]//td[4]")).getText();
 						
-						System.out.print(valueString);
+						//System.out.print(valueString);
+						int changed=Integer.parseInt(valueString);
+						 i=i+changed;
+						//Integer wInteger=changed;
+						System.out.println(i);
 	
 					}
 					System.out.println();
