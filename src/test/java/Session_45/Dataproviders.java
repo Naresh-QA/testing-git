@@ -55,7 +55,7 @@ public class Dataproviders {
 		//driver.switchTo().alert().accept();
 		driver.close();
 	}
-@ DataProvider(name="ld",indices = {0})
+@ DataProvider(name="ld",indices = {0})//indices is used to use how arrays we need to use
 Object[][] data() {
 	Object list[][]= {
 			{"soumya","test"},
