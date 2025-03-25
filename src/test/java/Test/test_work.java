@@ -1,90 +1,35 @@
+<<<<<<< Updated upstream
+=======
 package Test;
 
-import java.io.InputStream;
+import java.sql.Driver;
+import java.time.Duration;
+import java.util.List;
 
-class bankaccount{
-	private int accountnumber;
-	private int balance;
-	private String name;
-	//static int initalbalance=1000;
-	private int deposit;
-	private int withdraw;
-	private int newbalance;
-	public bankaccount(InputStream in) {
-		// TODO Auto-generated constructor stub
-	}
-	public int getAccountnumber() {
-		return accountnumber;
-	}
-	public void setAccountnumber(int accountnumber) {
-		this.accountnumber = accountnumber;
-	}
-	public int getBalance() {
-		System.out.println("initial balance: "+ balance);
-		return balance;
-	}
-	public void setBalance(int balance) {
-		this.balance = balance;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public int getNewbalance() {
-		newbalance=(deposit+balance);
-		System.out.println("deposited amount: "+deposit +" . new balance : "+(deposit+balance));
-		return newbalance;
-	}
-	public void setNewbalance(int newbalance) {
-		this.newbalance = newbalance;
-	}
-	public int getDeposit() {
-		return deposit+newbalance;
-	}
-	public void setDeposit(int deposit) {
-		this.deposit = deposit;
-	}
-	public int getWithdraw() {
-		System.out.println("withdraw amount: "+ withdraw+ "newbalance : "+(newbalance-withdraw));
-		return newbalance-withdraw;
-	}
-	public void setWithdraw(int withdraw) {
-		this.withdraw = withdraw;
-	}
-	public int nextInt() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	
-	
-	
-	
-}
+import javax.lang.model.element.Element;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import Session_30.select_dropdown;
 
 public class test_work {
 public static void main(String[] args) {
-	
-	bankaccount where=new bankaccount(System.in); 
-	System.out.println("enter a number : ");
-	int setbalance=where.nextInt();
-	where.getBalance();
-
-		/*where.setBalance(1000);
-		where.setAccountnumber(123456789);
-		where.setName("naresh");
-		where.setDeposit(1000);
-		where.setWithdraw(200);
-		where.getAccountnumber();
-		where.getBalance();
-		where.getName();
-		where.getDeposit();
-		where.getNewbalance();
-		where.getWithdraw();*/
-		
-	
-
+	WebDriver driver=new ChromeDriver();
+	WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(5));
+	driver.get("https://blazedemo.com/");
+	driver.manage().window().maximize();
+//WebElement selectElement=
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//select[@name=\"fromPort\"]"))).click();
+	//Select select=new select(selectElement);
+			driver.findElement(By.xpath("//option[@value=\"Paris\"]")).click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//option[@value=\"Buenos Aires\"]"))).click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value=\"Find Flights\"]"))).click();
 }
 }
 
+>>>>>>> Stashed changes
