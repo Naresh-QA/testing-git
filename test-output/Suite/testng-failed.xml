@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Browser Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="Session_42.register">
+      <class name="Session_45.Dataproviders">
         <methods>
-          <include name="register"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="open_application"/>
+          <include name="logout"/>
         </methods>
-      </class> <!-- Session_42.register -->
+      </class> <!-- Session_45.Dataproviders -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Browser Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

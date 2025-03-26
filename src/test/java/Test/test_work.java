@@ -1,5 +1,4 @@
-<<<<<<< Updated upstream
-=======
+
 package Test;
 
 import java.sql.Driver;
@@ -32,4 +31,3 @@ public static void main(String[] args) {
 }
 }
 
->>>>>>> Stashed changes
