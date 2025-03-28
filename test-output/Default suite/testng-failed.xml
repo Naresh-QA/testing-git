@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Session_45.Dataproviders">
+      <class name="Session_46.listners">
         <methods>
-          <include name="login"/>
+          <include name="users"/>
           <include name="open_application"/>
-          <include name="logout"/>
+          <include name="image"/>
         </methods>
-      </class> <!-- Session_45.Dataproviders -->
+      </class> <!-- Session_46.listners -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
