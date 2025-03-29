@@ -19,7 +19,7 @@ public class listners {
 void open_application() {
 		driver=new ChromeDriver();
 		wait=new WebDriverWait(driver, Duration.ofSeconds(5));
-		driver.get("http://stg-fms.goldbox.gold/signin");
+		driver.get("http://fms.goldbox.gold/signin");
 		driver.manage().window().maximize();
 	}
 	@Test(priority = 1)
