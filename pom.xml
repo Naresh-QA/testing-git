@@ -16,12 +16,7 @@
     <artifactId>selenium-java</artifactId>
     <version>4.27.0</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.29.0</version>
-</dependency>
+
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
     <groupId>org.testng</groupId>
@@ -30,11 +25,22 @@
     <scope>test</scope>
 </dependency>
 
+
 <dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.11.0</version>
-    <scope>test</scope>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.6.2</version>  <!-- Check latest version -->
 </dependency>
+<!-- Extent Reports Core Library -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.1</version>
+</dependency>
+
+
+
+
+
 </dependencies>
 </project>
