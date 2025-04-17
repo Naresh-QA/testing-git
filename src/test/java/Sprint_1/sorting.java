@@ -9,6 +9,7 @@ public class sorting {
 		System.out.println("before sorting "+Arrays.toString(a));
 		Arrays.sort(a);
 		System.out.println("after sorting "+Arrays.toString(a));
+		System.out.println("what are ");
 	}
 
 }
